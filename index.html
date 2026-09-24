@@ -44,7 +44,7 @@ img{max-width:100%}
 a{color:inherit;text-decoration:none}
 ul,ol{margin:0;padding:0}
 :focus-visible{outline:3px solid rgba(8,103,232,.4);outline-offset:3px;border-radius:8px}
-section{padding:110px 0;scroll-margin-top:60px}
+section{padding:110px 0;scroll-margin-top:100px}
 .wrap{width:min(1180px,92vw);margin:auto}
 .skip{position:absolute;left:12px;top:-60px;z-index:200;background:var(--navy);color:#fff;padding:10px 14px;border-radius:10px;font-size:13px;font-weight:700}
 .skip:focus{top:12px}
@@ -295,18 +295,6 @@ table.gap td:first-child{color:var(--navy);font-weight:600;width:40%}
 .footer-links a{padding:8px 11px;border:1px solid var(--line);border-radius:9px;color:#4b5d76}
 .footer-links a:hover{color:var(--blue);border-color:#bddbfb}
 
-/* ---------- Image viewer ---------- */
-body.modal-open{overflow:hidden}
-.modal{position:fixed;inset:0;z-index:1000;display:grid;place-items:center;padding:clamp(12px,3vw,40px);background:rgba(7,20,45,.64);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
-.modal.is-open{opacity:1;visibility:visible}
-.modal-panel{position:relative;width:min(1180px,100%);max-height:92vh;overflow:auto;border-radius:26px;background:#fff;box-shadow:0 30px 100px rgba(0,0,0,.3)}
-.modal-media{padding:clamp(10px,2vw,22px);background:linear-gradient(180deg,#f7faff,#fff)}
-.modal-media img{display:block;width:100%;height:auto;max-height:72vh;object-fit:contain;border-radius:16px}
-.modal-copy{padding:16px clamp(18px,3vw,30px) 24px}
-.modal-copy h3{font-size:clamp(18px,2vw,24px)}
-.modal-copy p{margin:6px 0 0;color:var(--muted);font-size:14px;line-height:1.55}
-.modal-close{position:absolute;top:12px;right:12px;width:44px;height:44px;border:1px solid rgba(8,30,70,.12);border-radius:50%;background:rgba(255,255,255,.95);color:var(--navy);font-size:24px;line-height:1;cursor:pointer;z-index:2}
-
 /* ---------- Motion ---------- */
 .js .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
 .js .reveal.show{opacity:1;transform:none}
@@ -391,7 +379,7 @@ body.modal-open{overflow:hidden}
   .links a{display:flex;align-items:center}
 }
 @media print{
-  .nav,.modal,.skip{display:none}
+  .nav,.skip{display:none}
   .js .reveal{opacity:1;transform:none}
   section{padding:30px 0}
 }
@@ -409,7 +397,7 @@ body.modal-open{overflow:hidden}
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
   </div>
-  <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-links"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
+  <button class="menu-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="site-links"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
   <a class="navbtn" href="assets/Sreekanth_Mangali_Resume.pdf" target="_blank" rel="noopener">Resume ↓</a>
 </nav>
 
@@ -421,7 +409,7 @@ body.modal-open{overflow:hidden}
     <div class="reveal">
       <div class="eyebrow"><i></i>Broker APIs · Product analytics · SQL · UAT</div>
       <h1>Business Analyst<span class="h1-sub">Making trading products faster, clearer and easier to trust.</span></h1>
-      <p class="lead">Business Analyst working across broker integrations, trading signals and execution analytics. I turn product problems into measurable improvements—from faster account activation to verified P&amp;L and more successful trade execution.</p>
+      <p class="lead">I work across broker integrations, trading signals and execution analytics, turning product questions into clear requirements, validated data and tested releases.</p>
       <a class="hero-role" href="#experience">
         <span class="live-dot"></span>
         <span><b>Business Analyst, AlgoRishi Pvt Ltd</b><small>Hyderabad, India · Sep 2026 – Present</small></span>
@@ -432,7 +420,7 @@ body.modal-open{overflow:hidden}
         <a class="btn" href="assets/Sreekanth_Mangali_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) ↓</a>
         <a class="btn" href="https://www.linkedin.com/in/sreekanthmangali" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
-      <div class="open-to"><span>Open to</span><div class="chips"><span class="chip">Business Analyst</span><span class="chip">Junior Business Analyst</span><span class="chip">Business Systems Analyst</span><span class="chip">Product / Business Analyst</span><span class="chip">Business Operations Analyst</span></div></div>
+      <div class="open-to"><span>Seeking roles in</span><div class="chips"><span class="chip">Business Analysis</span><span class="chip">Business Systems</span><span class="chip">Product Analysis</span><span class="chip">Business Operations</span></div></div>
     </div>
     <div class="photo-wrap reveal">
       <picture>
@@ -444,7 +432,7 @@ body.modal-open{overflow:hidden}
   </div>
   <div class="wrap">
     <div class="reveal">
-      <div class="sub lifecycle-title">The business analysis work I do, from problem to release</div>
+      <div class="sub lifecycle-title">How I take a product problem from discovery to release</div>
       <ol class="lifecycle" aria-label="Business analysis lifecycle">
         <li>Product problem</li>
         <li>API mapping</li>
@@ -466,7 +454,7 @@ body.modal-open{overflow:hidden}
   <div class="wrap">
     <div class="section-head reveal">
       <div><div class="kicker">Professional experience</div><h2>Product decisions,<br>backed by evidence.</h2></div>
-      <p>My work at AlgoRishi Pvt Ltd connects broker APIs, trading data, user behaviour and release quality.</p>
+      <p>At AlgoRishi, I connect broker integrations, trading data and user behaviour to support reliable product releases.</p>
     </div>
     <article class="role reveal" data-start="2026-09-01">
       <div class="role-top"><div><div class="role-status"><span class="live-dot"></span>Current role</div><h3>Business Analyst (Product &amp; Data)</h3><div class="meta">AlgoRishi Pvt Ltd · Full-time · Hyderabad, India · Sep 2026 – Present · <span data-tenure>1 year</span></div></div></div>
@@ -481,7 +469,7 @@ body.modal-open{overflow:hidden}
       <div class="scope">
         <div class="scope-card"><h4>Broker API onboarding</h4><ul><li>Mapped broker endpoints and webhooks for integrations including Alice Blue and Angel One.</li><li>Reduced onboarding drop-off by <span class="m">28%</span> and cut activation time from <span class="m">25 minutes to under 10</span>.</li></ul></div>
         <div class="scope-card"><h4>Signal and P&amp;L verification</h4><ul><li>Wrote PostgreSQL queries to match daily signal alerts with broker-side execution logs.</li><li>Found a data-pipeline lag behind a <span class="m">4% P&amp;L discrepancy</span>, restoring verified leaderboard accuracy.</li></ul></div>
-        <div class="scope-card"><h4>Product funnel optimization</h4><ul><li>Tracked the journey from live push alert to order execution using Mixpanel / Amplitude.</li><li>Identified a native-layout exit point and helped deliver One-Tap Execution, lifting submissions by <span class="m">18%</span>.</li></ul></div>
+        <div class="scope-card"><h4>Product funnel optimization</h4><ul><li>Tracked the journey from live push alert to order execution using Mixpanel / Amplitude.</li><li>Found a point in the mobile journey where users left before placing an order. Helped deliver One-Tap Execution, increasing submissions by <span class="m">18%</span>.</li></ul></div>
         <div class="scope-card"><h4>UAT and API quality</h4><ul><li>Owned end-to-end UAT for the live push-alert experience.</li><li>Executed <span class="m">50+ Postman test cases</span> and verified entry, target and stop-loss updates in under <span class="m">500 ms</span>.</li></ul></div>
         <div class="scope-card"><h4>Leadership reporting</h4><ul><li>Replaced a manual spreadsheet routine with direct product-usage metrics for the CEO and engineering lead.</li><li>Saved <span class="m">8 hours</span> of data consolidation every week and created a clearer operating view.</li></ul></div>
         <div class="scope-card"><h4>Agile delivery</h4><ul><li>Managed the Jira backlog and translated trading-engine requirements into functional user stories and acceptance criteria.</li><li>Coordinated weekly sprint releases with a team of <span class="m">4 software engineers</span>.</li></ul></div>
@@ -499,12 +487,12 @@ body.modal-open{overflow:hidden}
   <div class="wrap">
     <div class="section-head reveal">
       <div><div class="kicker">Flagship project</div><h2>From integration<br>to verified outcome.</h2></div>
-      <p>One end-to-end product initiative showing how I move from a business problem to a tested, measurable release.</p>
+      <p>A case study of the analysis, collaboration and validation behind a broker integration initiative.</p>
     </div>
 
     <article class="case reveal">
       <span class="case-tag">Flagship work project · confidential details removed</span>
-      <h3>Automated Broker API Onboarding &amp; Trading Signal Verification Engine</h3>
+      <h3>Broker API Onboarding and Trading Signal Verification</h3>
       <p>A product and data initiative that connected third-party brokers to the core signal engine, verified every execution against the intended trade, and made the path from alert to order faster and more reliable.</p>
       <div class="trace chain" aria-label="Project workflow"><span>Broker onboarding</span><span>API mapping</span><span>Signal matching</span><span>Execution check</span><span>P&amp;L verification</span><span>Funnel analysis</span><span class="ok">Release</span></div>
       <div class="panels three">
@@ -515,8 +503,8 @@ body.modal-open{overflow:hidden}
       <div class="sub">How the analysis worked</div>
       <div class="steps">
         <div class="step"><div class="step-head"><span class="n">1</span><h4>Map broker onboarding</h4><small>Requirements · endpoints · webhooks</small></div><div class="step-body"><p>Documented the data and status changes required between the app, broker authentication and the core signal engine. Worked with engineering on Alice Blue and Angel One flows, including failure states and activation checks.</p></div></div>
-        <div class="step"><div class="step-head"><span class="n">2</span><h4>Build a verification trail</h4><small>PostgreSQL · execution logs · P&amp;L</small></div><div class="step-body"><p>Matched daily signal alerts to broker-side execution logs using identifiers, timestamps, instrument, quantity and price. This exposed a feed lag that caused a 4% variance in public leaderboard values.</p><div class="trace chain flat"><span>Signal created</span><span>Alert delivered</span><span>Order submitted</span><span>Broker execution</span><span>P&amp;L reconciled</span></div></div></div>
-        <div class="step"><div class="step-head"><span class="n">3</span><h4>Find the funnel leak</h4><small>Mixpanel / Amplitude · journey analysis</small></div><div class="step-body"><p>Measured movement from live notification to the execution screen and located the largest native-layout exit point. The finding shaped the One-Tap Execution change and its success measure.</p></div></div>
+        <div class="step"><div class="step-head"><span class="n">2</span><h4>Build a verification trail</h4><small>PostgreSQL · execution logs · P&amp;L</small></div><div class="step-body"><p>Matched daily signal alerts to broker-side execution logs using identifiers, timestamps, instrument, quantity and price. This exposed a feed delay associated with a 4% variance in leaderboard values.</p><div class="trace chain flat"><span>Signal created</span><span>Alert delivered</span><span>Order submitted</span><span>Broker execution</span><span>P&amp;L reconciled</span></div></div></div>
+        <div class="step"><div class="step-head"><span class="n">3</span><h4>Find the funnel leak</h4><small>Mixpanel / Amplitude · journey analysis</small></div><div class="step-body"><p>Measured movement from live notification to the execution screen and found where mobile users were leaving before placing an order. That insight shaped the One-Tap Execution change and its success measure.</p></div></div>
         <div class="step"><div class="step-head"><span class="n">4</span><h4>Prove release readiness</h4><small>Postman · UAT · Jira</small></div><div class="step-body"><p>Ran more than 50 API and UAT cases across entry, target and stop-loss events. Confirmed dashboard updates stayed below 500 milliseconds and tracked defects through weekly releases.</p></div></div>
       </div>
       <div class="sub">Measured outcomes</div>
@@ -539,7 +527,7 @@ body.modal-open{overflow:hidden}
 <section id="deliverables">
   <div class="wrap">
     <div class="section-head reveal">
-      <div><div class="kicker">Deliverables</div><h2>What my requirements<br>look like.</h2></div>
+      <div><div class="kicker">Deliverables</div><h2>A sample<br>requirements document.</h2></div>
       <p>An illustrative user story for the broker integration project, with business rules, testable acceptance criteria and full traceability.</p>
     </div>
     <div class="artifact reveal">
@@ -581,8 +569,8 @@ body.modal-open{overflow:hidden}
 <section id="skills">
   <div class="wrap">
     <div class="section-head reveal">
-      <div><div class="kicker">Skills</div><h2>Business analysis first,<br>tools in support.</h2></div>
-      <p>The analysis is the job. SQL, Excel and API checks are how I prove the requirements were met.</p>
+      <div><div class="kicker">Skills</div><h2>Business analysis,<br>supported by the right tools.</h2></div>
+      <p>I use SQL, Excel and API checks to validate data, clarify requirements and confirm release readiness.</p>
     </div>
     <div class="tool-groups reveal">
       <div class="tool-group primary">
@@ -648,15 +636,13 @@ body.modal-open{overflow:hidden}
     <div class="contact reveal">
       <div class="kicker">Contact</div>
       <h2>Let’s connect.</h2>
-      <p>Open to Business Analyst, Junior Business Analyst, Business Systems Analyst, Product / Business Analyst and Business Operations Analyst roles. The quickest way to reach me is email.</p>
+      <p>I'm interested in business analyst roles focused on product, systems or operations. For professional enquiries, email is the best way to reach me.</p>
       <div class="actions">
         <a class="btn primary" href="mailto:sreekanthmangali@outlook.com">sreekanthmangali@outlook.com</a>
         <a class="btn" href="https://www.linkedin.com/in/sreekanthmangali" target="_blank" rel="noopener">LinkedIn ↗</a>
         <a class="btn" href="https://github.com/SreekanthWork" target="_blank" rel="noopener">GitHub ↗</a>
         <a class="btn" href="assets/Sreekanth_Mangali_Resume.pdf" target="_blank" rel="noopener">Resume (PDF) ↓</a>
         <a class="btn" href="assets/Sreekanth_Mangali_Resume.docx" download>Resume (Word) ↓</a>
-        <a class="btn" href="assets/Sreekanth_Mangali_Resume_ATS_Canada.pdf" target="_blank" rel="noopener">ATS Resume · Canada (PDF) ↓</a>
-        <a class="btn" href="assets/Sreekanth_Mangali_Resume_ATS_Canada.docx" download>ATS Resume · Canada (Word) ↓</a>
       </div>
     </div>
   </div>
@@ -667,14 +653,6 @@ body.modal-open{overflow:hidden}
   <div><strong>Sreekanth.</strong><span>Business Analyst: broker APIs, product analytics, SQL validation and UAT for trading products.</span><span>© <span data-year>2026</span> Sreekanth Mangali</span></div>
   <div class="footer-links"><a href="https://www.linkedin.com/in/sreekanthmangali" target="_blank" rel="noopener">LinkedIn ↗</a><a href="https://github.com/SreekanthWork" target="_blank" rel="noopener">GitHub ↗</a><a href="mailto:sreekanthmangali@outlook.com">Email</a><a href="assets/Sreekanth_Mangali_Resume.pdf" target="_blank" rel="noopener">Resume ↓</a></div>
 </footer>
-
-<div class="modal" id="modal" aria-hidden="true">
-  <div class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-    <button class="modal-close" type="button" aria-label="Close larger view">×</button>
-    <div class="modal-media"><img id="modal-img" src="" alt=""></div>
-    <div class="modal-copy"><h3 id="modal-title"></h3><p id="modal-desc"></p></div>
-  </div>
-</div>
 
 <script>
 (function(){
@@ -732,10 +710,12 @@ body.modal-open{overflow:hidden}
     nav.classList.toggle('menu-open',open);
     toggle.setAttribute('aria-expanded',open);
     toggle.querySelector('.sr-only').textContent=open?'Close menu':'Open menu';
+    toggle.setAttribute('aria-label',open?'Close navigation menu':'Open navigation menu');
   }
   toggle.addEventListener('click',function(){setMenu(!nav.classList.contains('menu-open'))});
   links.forEach(function(a){a.addEventListener('click',function(){setMenu(false)})});
   document.addEventListener('click',function(e){if(!nav.contains(e.target))setMenu(false)});
+  document.addEventListener('keydown',function(e){if(e.key==='Escape')setMenu(false)});
 
   /* Highlight the current section in the nav */
   var map={};links.forEach(function(a){map[a.getAttribute('href').slice(1)]=a});
@@ -748,29 +728,10 @@ body.modal-open{overflow:hidden}
   },{rootMargin:'-45% 0px -50% 0px'});
   Object.keys(map).forEach(function(id){var el=document.getElementById(id);if(el)so.observe(el)});
 
-  /* Image viewer */
-  var modal=document.getElementById('modal'),img=document.getElementById('modal-img'),
-      title=document.getElementById('modal-title'),desc=document.getElementById('modal-desc'),
-      closeBtn=modal.querySelector('.modal-close'),last=null;
-  function openV(card){
-    last=card;img.src=card.dataset.visual;img.alt=card.querySelector('img').alt;
-    title.textContent=card.dataset.title||'';desc.textContent=card.dataset.description||'';
-    modal.classList.add('is-open');modal.setAttribute('aria-hidden','false');
-    document.body.classList.add('modal-open');closeBtn.focus();
-  }
-  function closeV(){
-    modal.classList.remove('is-open');modal.setAttribute('aria-hidden','true');
-    document.body.classList.remove('modal-open');img.src='';
-    if(last){last.focus();last=null}
-  }
-  document.querySelectorAll('.visual[data-visual]').forEach(function(c){
-    c.addEventListener('click',function(){openV(c)});
-    c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();openV(c)}});
-  });
-  closeBtn.addEventListener('click',closeV);
-  modal.addEventListener('click',function(e){if(e.target===modal)closeV()});
-  document.addEventListener('keydown',function(e){if(e.key==='Escape'&&modal.classList.contains('is-open'))closeV()});
 })();
 </script>
 </body>
 </html>
+
+
+
